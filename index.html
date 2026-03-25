@@ -3,76 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .navbar {
-            border-top: 5px solid black;
-            background-color: black;
-            color: white;
-            padding: 15px;
-        }
-        .navbar a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        .hero {
-            width: 100%;
-            height: 400px;
-            background-image: url('hero-image-url.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-        .products {
-            display: flex;
-            justify-content: space-between;
-            margin: 20px 0;
-        }
-        .products img {
-            width: 18%;
-            border-radius: 5px;
-        }
-        .additional-images {
-            display: flex;
-            justify-content: space-between;
-        }
-        .additional-images img {
-            width: 24%;
-            border-radius: 5px;
-        }
-        .signup {
-            border-bottom: 5px solid gray;
-            padding: 15px;
-        }
-    </style>
+    <title>Home - Business</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="navbar">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html">Home</a>
         <a href="drinks.html">Drinks</a>
         <a href="menu.html">Menu</a>
         <a href="catering.html">Catering</a>
+    </nav>
+
+    <!-- Hero Image (full width) -->
+    <img src="https://via.placeholder.com/1200x500?text=Hero+Image" alt="Hero" class="hero-image">
+
+    <!-- Product Row - 5 Images full width in single row -->
+    <div class="product-row">
+        <img src="https://via.placeholder.com/240x300?text=Product+1" alt="Product 1">
+        <img src="https://via.placeholder.com/240x300?text=Product+2" alt="Product 2">
+        <img src="https://via.placeholder.com/240x300?text=Product+3" alt="Product 3">
+        <img src="https://via.placeholder.com/240x300?text=Product+4" alt="Product 4">
+        <img src="https://via.placeholder.com/240x300?text=Product+5" alt="Product 5">
     </div>
-    <div class="hero"></div>
-    <div class="products">
-        <img src="product1-image-url.jpg" alt="Product 1">
-        <img src="product2-image-url.jpg" alt="Product 2">
-        <img src="product3-image-url.jpg" alt="Product 3">
-        <img src="product4-image-url.jpg" alt="Product 4">
-        <img src="product5-image-url.jpg" alt="Product 5">
+
+    <!-- Bottom Images - 4 Images -->
+    <div class="bottom-images">
+        <img src="https://via.placeholder.com/300x250?text=Image+6" alt="Image 6">
+        <img src="https://via.placeholder.com/300x250?text=Image+7" alt="Image 7">
+        <img src="https://via.placeholder.com/300x250?text=Image+8" alt="Image 8">
+        <img src="https://via.placeholder.com/300x250?text=Image+9" alt="Image 9">
     </div>
-    <div class="additional-images">
-        <img src="image6-url.jpg" alt="Additional Image 1">
-        <img src="image7-url.jpg" alt="Additional Image 2">
-        <img src="image8-url.jpg" alt="Additional Image 3">
-        <img src="image9-url.jpg" alt="Additional Image 4">
-    </div>
-    <div class="signup">
-        <h3>Sign up for our newsletter</h3>
-        <input type="text" placeholder="Enter your email">
-        <button type="submit">Sign Up</button>
-    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="email-signup">
+            <input type="email" placeholder="Enter your email for deals and updates">
+            <button>Sign Up</button>
+        </div>
+    </footer>
 </body>
 </html>
