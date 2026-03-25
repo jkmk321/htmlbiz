@@ -1,0 +1,50 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+body {
+    color: white;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    border: 1px solid black;
+}
+
+.footer {
+    border-top: 1px solid gray;
+    padding: 20px;
+}
+
+input[type='email'] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: black;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    border: 1px solid black;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}
